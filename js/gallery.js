@@ -66,7 +66,7 @@ const galleryListEl = document.querySelector('.js-gallery');
 galleryListEl.insertAdjacentHTML('afterbegin', galleryCardsTemplate);
 galleryListEl.addEventListener('click', event => {
     event.preventDefault();
-    if (Event.target === event.currentTarget) {
+    if (event.target === event.currentTarget) {
         return;
     }
     const productLink = event.target.dataset.source;
